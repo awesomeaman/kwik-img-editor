@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="shortcut icon" href="./aman.jpg">
+    <link rel="stylesheet" href="editing.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>Kwik Image Editor</h1>
+        </div>
+        <div class="edit-section">
+            <div class="editor">
+                <div class="slider-cont">
+                    <label for="blur">Blur:</label>
+                    <input type="range" class="slider" value="0" min="0" max="100" id="blur" >
+                    <span class="result" id="blur-val">0%</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="blur">Brightness:</label>
+                    <input type="range" class="slider" value="0" min="0" max="100" id="brightness">
+                    <span class="result" id="brightness-val">100%</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="contrast">Contrast:</label>
+                    <input type="range" class="slider" value="100" min="0" max="999" id="contrast">
+                    <span class="result" id="contrast-val">100%</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="grayscale">Gray Scale:</label>
+                    <input type="range" class="slider" value="0" min="0" max="100" id="grayscale">
+                    <span class="result" id="grayscale-val">0%</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="huerotate">Hue:</label>
+                    <input type="range" class="slider" value="0" min="0" max="360" id="huerotate">
+                    <span class="result" id="huerotate-val">0</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="invert">Invert:</label>
+                    <input type="range" class="slider" value="0" min="0" max="100" id="invert">
+                    <span class="result" id="invert-val">0%</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="opacity">Opacity:</label>
+                    <input type="range" class="slider" value="0" min="0" max="100" id="opacity">
+                    <span class="result" id="opacity-val">100%</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="saturation">Saturation:</label>
+                    <input type="range" class="slider" value="0" min="0" max="100" id="saturation">
+                    <span class="result" id="saturation-val">100%</span>  
+                </div>
+                <div class="slider-cont">
+                    <label for="sepia">Sepia:</label>
+                    <input type="range" class="slider" value="0" min="0" max="100" id="sepia">
+                    <span class="result" id="sepia-val">0%</span>  
+                </div>
+            </div>
+            <div class="editing-section">
+                <div class="file-section">
+                    <div class="file-choose">
+                        <input type="file" name="" id="img-selector" accept="image/*">
+                        <label for="img-selector"><i class="fa-regular fa-image" style="color: #ffffff;"></i> Choose a Photo</label>
+                    </div>
+                    <button id="download">Download</button>
+                </div>
+                <div class="image-show">
+                    <img id="img-src">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/3901db8efc.js" crossorigin="anonymous"></script>
+    <script src="edit.js"></script>
+</body>
+</html>
